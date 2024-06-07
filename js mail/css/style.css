@@ -15,12 +15,12 @@ main {
     margin: 0 auto;
     padding-top: 30px;
     text-align: center;
+    color: white;
 }
 
 .title {
     font-size: 30px;
     font-weight: bold;
-    color: white;
 }
 
 .container input {
@@ -44,4 +44,9 @@ main {
 
 .mybutton:hover {
     cursor: pointer;
+}
+
+.answer {
+    margin-top: 20px;
+    font-size: 20px;;
 }
