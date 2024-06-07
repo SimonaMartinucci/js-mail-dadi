@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* MAIN */
+main {
+    background-color: brown;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.container input {
+    font-size: 15px;
+    width: 350px;
+}
+
+.mybutton {
+    display: inline-block;
+    background-color: white;
+    color: brown;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.title,
+.container input,
+.mybutton {
+    margin-bottom: 20px;
+}
+
+.mybutton:hover {
+    cursor: pointer;
+}
