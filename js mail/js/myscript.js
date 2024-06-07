@@ -11,29 +11,28 @@ const userAccesso = ["simo.martinucci3@gmail.com", "mario.rossi@gmail.com", "jan
 myButton.addEventListener("click",
     function() {
 
-        let messaggio;
+        // recupero valore email utente
+        let userEmailValue = userEmail.value;
+        // richiamo div in cui inserire la risposta
         let myDiv = document.getElementById("answer");
-        let answer;
+        let answer = false;
+        let messaggio;
         
         // faccio partire ciclo
         for (let i = 0; i < userAccesso.length; i++) {
-            // recupero valore email utente
-            let userEmailValue = userEmail.value;
-        
             // inserisco condizioni
             if(userEmailValue === userAccesso[i]) {
-                messaggio = "Può entrare";
-                answer = "Complimenti, hai i requisiti per l'accesso";
-            }else {
-                messaggio = "Non può entrare"
-                answer = "Siamo spiacenti, l'indirizzo email non soddisfa i requisiti per l'accesso";
-            }
-
-            // metto la risposta all'interno del div
-            myDiv.append(answer);
-
-            console.log(userEmailValue, userAccesso[i], messaggio);        
+                answer = true;
+            }   
         }
-        
+
+        if(answer = true) {
+            messaggio = "Complimenti, hai i requisiti per l'accesso";
+        }else{
+            messaggio = "Siamo spiacenti, l'indirizzo email non soddisfa i requisiti per l'accesso";
+        }
+
+        // metto la risposta all'interno del div
+        myDiv.append(messaggio);
     }
 )
