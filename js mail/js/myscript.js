@@ -26,7 +26,8 @@ myButton.addEventListener("click",
             }   
         }
 
-        if(answer = true) {
+        // decido il messaggio
+        if(answer === true) {
             messaggio = "Complimenti, hai i requisiti per l'accesso";
         }else{
             messaggio = "Siamo spiacenti, l'indirizzo email non soddisfa i requisiti per l'accesso";
